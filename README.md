@@ -4,6 +4,8 @@
 
 Badr Mellal, Rabab Benfouina, Ahmed Drissi el Maliani. LRIT Laboratory, Faculty of Sciences in Rabat, Mohammed V University in Rabat, Morocco.
 
+<img width="1080" height="296" alt="Screenshot 2026-05-15 at 18 55 20" src="https://github.com/user-attachments/assets/8e0bc554-3c6a-4570-8a78-723fe75c70b2" />
+
 
 ## Overview
 
@@ -37,6 +39,8 @@ Linear probe on SemanticKITTI (frozen encoder + 1×1×1 conv head), 19-class mIo
 - Cross-modal target contribution: **+1.43 pp** at 100 % labels (vs Occupancy-MAE).
 - Masking inductive bias contribution: **+1.50 pp** at 100 % labels (vs no-mask).
 - Largest per-class gains: building **+36.6**, sidewalk **+32.8**, road **+25.1**, car **+23.0**, terrain **+21.4**, vegetation **+20.6** pp.
+
+<img width="1079" height="383" alt="Screenshot 2026-05-15 at 18 56 14" src="https://github.com/user-attachments/assets/333d633c-f959-401d-8c94-7d9d16cd1f37" />
 
 ---
 
