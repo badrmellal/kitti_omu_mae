@@ -2,7 +2,7 @@
 
 **Cross-Modal Masked Voxel Pretraining with Frozen Vision Foundation Targets for Autonomous Driving Perception**
 
-Badr Mellal, Rabab Benfouina, Ahmed Drissi el Maliani — LRIT Laboratory, Faculty of Sciences in Rabat, Mohammed V University in Rabat, Morocco.
+Badr Mellal, Rabab Benfouina, Ahmed Drissi el Maliani. LRIT Laboratory, Faculty of Sciences in Rabat, Mohammed V University in Rabat, Morocco.
 
 ---
 
@@ -79,7 +79,7 @@ The notebook trains and evaluates **four variants** in a single run:
 
 | Variant   | Architecture                              | Pretraining objective                                                  |
 |-----------|-------------------------------------------|------------------------------------------------------------------------|
-| `random`  | OMU-MAE class (architecture-matched)      | none — fresh init, used as probe baseline                              |
+| `random`  | OMU-MAE class (architecture-matched)      | none. Fresh init, used as probe baseline                              |
 | `occmae`  | `OccupancyMAEBaseline` (LiDAR-only 3D CNN) | range-aware mask + focal BCE on occupancy                              |
 | `nomask`  | OMU-MAE class (unchanged)                 | `mask_ratio=0`; cross-modal feature regression at all positions (≈ CleverDistiller) |
 | `full`    | OMU-MAE class (unchanged)                 | `mask=0.85` + dual reconstruction (current method)                     |
@@ -124,7 +124,7 @@ Each variant writes to `data/runs/kitti_omumae_full/{variant}/`. The final compa
 
 1. Open `kitti_pretrain_omumae_full.ipynb` in Colab (T4/A100) or locally on a CUDA / MPS / CPU host.
 2. Run the **Setup** cell (downloads KITTI + SemanticKITTI).
-3. Run all cells — pretraining, probing, plotting, and `final_results.json` happen end-to-end.
+3. Run all cells. Pretraining, probing, plotting, and `final_results.json` happen end-to-end.
 
 ---
 
@@ -148,10 +148,10 @@ Each variant writes to `data/runs/kitti_omumae_full/{variant}/`. The final compa
 ## Citation
 
 ```bibtex
-@misc{mellal2025omumae,
+@misc{mellal2026omumae,
   title  = {OMU-MAE: Cross-Modal Masked Voxel Pretraining with Frozen Vision Foundation Targets for Autonomous Driving Perception},
   author = {Mellal, Badr and Benfouina, Rabab and Drissi el Maliani, Ahmed},
-  year   = {2025},
+  year   = {2026},
   note   = {LRIT Laboratory, Mohammed V University in Rabat}
 }
 ```
